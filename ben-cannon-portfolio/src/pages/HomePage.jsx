@@ -69,7 +69,7 @@ const HomePage = () => {
 
             <IconBox
               isDarkMode={isDarkMode}
-              link='"https://www.linkedin.com/in/ben-cannon04'
+              link="https://www.linkedin.com/in/ben-cannon04"
               icon="LinkedIn"
             />
 
