@@ -314,7 +314,78 @@ function EducationPage() {
               timePeriod="2025-Present"
               icon={<SchoolIcon />}
               key={4}
-            />
+            >
+              <SkillsBox
+                title="Mobile Development"
+                content="This module introduced the principles of mobile software development using Android as a practical case study. 
+                It focused on mobile architecture, object-oriented design, and applying patterns such as MVC and MVVM. As part of a team, I helped design and develop a 
+                functional Android application, implementing features such as touch interaction, data persistence, background services, and sensor integration."
+                skills={[{ text: 'Kotlin' }, { text: 'MVVM Architecture' }, { text: "Communication"}]}
+                isDarkMode={isDarkMode}
+              />
+              <SkillsBox
+                title="Bio-inspired Computing"
+                content="This module explored modern AI techniques inspired by biological systems, including evolution, neural networks, swarm intelligence,
+                 and cellular systems. Using Python, I applied optimisation and simulation algorithms to simulate forrest fires in the Unitest States of America, 
+                 evaluating their efficiency and suitability. The module emphasised scientific experimentation, critical analysis, and collaborative problem-solving 
+                 through a group project."
+                skills={[{ text: 'Python' }, { text: 'Central Automata' }, { text: "Immune Inspired Algorithms"}, { text: "Communication"}]}
+                isDarkMode={isDarkMode}
+              />
+              <SkillsBox
+                title="Advanced Algorithms"
+                content="This module focused on advanced algorithm design and analysis for solving complex computational problems efficiently.
+                 It covered optimisation techniques, randomisation methods, approximation algorithms, streaming algorithms, and advanced data structures. 
+                 Through research-led teaching and problem-solving exercises, I developed a strong theoretical foundation in analysing algorithm efficiency and 
+                 selecting appropriate approaches for large-scale and challenging problems."
+                skills={[{ text: 'Big O' }, { text: 'Algorithm Analysis' }, { text: "Streaming Algorithms"}, {text: "Random Algorithms"}]}
+                isDarkMode={isDarkMode}
+              />
+              <SkillsBox
+                title="Accounting and Law"
+                content="This module introduced the fundamental principles of financial accounting and business law relevant to organisations.
+                 It covered the preparation and interpretation of financial statements, alongside key legal concepts such as contracts, company law,
+                  and regulatory responsibilities. The module developed an understanding of how financial and legal frameworks influence business decision-making 
+                  and corporate governance."
+                skills={[{ text: 'Finicial Management' }, { text: 'Understanding Legal Core Principals' }, ]}
+                isDarkMode={isDarkMode}
+              />
+              <SkillsBox
+                title="Reinforcement Learning"
+                content="This module focused on the theory and implementation of reinforcement learning algorithms, covering Temporal Difference methods such as Q-Learning 
+                and SARSA, as well as Deep Reinforcement Learning. It included the mathematical foundations of supervised learning (backpropagation) as a precursor to deep RL.
+                 I implemented algorithms from first principles in Python and applied them to practical problems, producing research-style reports supported by independent 
+                 study of academic literature."
+                skills={[{ text: 'Q-Learning' }, { text: 'SARSA Algorithm' }, { text: "Deep Reinforcement Learning"}]}
+                isDarkMode={isDarkMode}
+              />
+              <SkillsBox
+                title="Software Re-engineering"
+                content="This module focused on understanding, analysing, and improving legacy software systems. 
+                It covered reverse-engineering techniques, static and dynamic code analysis, identification of code smells and anti-patterns, 
+                and applying refactoring and reengineering strategies. Through hands-on work with a large open-source system using GitHub, 
+                I collaborated in a team to analyse system structure, diagnose design issues, and propose structural improvements."
+                skills={[{ text: 'Reverse-engineering unfamiliar codebases' }, { text: 'Analysing Architecture' }, { text: "Identifying Code Smells"}]}
+                isDarkMode={isDarkMode}
+              />
+              <SkillsBox
+                title="Modelling and Simulation of Natural Systems"
+                content="This module explored mathematical and computational modelling of dynamic natural systems using differential equations
+                 and individual-based models. I developed and simulated models of biological and population systems, analysed their stability,
+                  and implemented numerical methods to explore system behaviour. The module strengthened my ability to connect mathematical theory with practical
+                   computational simulations."
+                skills={[{ text: 'Numerical Simulation Methods' }, { text: 'Differential Equations' }, { text: "Python"}]}
+                isDarkMode={isDarkMode}
+              />
+              <SkillsBox
+                title="Software Testing and Analysis"
+                content="This module focused on techniques for analysing and testing software systems using both static analysis and dynamic testing approaches.
+                 It covered systematic testing methods, automated test generation, and the evaluation of software quality through metrics.
+                  The module strengthened my ability to assess correctness, improve reliability, and apply structured testing strategies to complex systems."
+                skills={[{ text: 'Java' }, { text: 'JUnit' }, { text: "Automated Testing"}, { text: "Evaluating Software Quality"}]}
+                isDarkMode={isDarkMode}
+              />
+            </LargeBox>
           </div>
         </div>
       </div>
