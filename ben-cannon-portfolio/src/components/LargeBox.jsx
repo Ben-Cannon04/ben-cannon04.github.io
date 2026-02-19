@@ -14,6 +14,7 @@ LargeBox.propTypes = {
   skills: PropTypes.array,
   children: PropTypes.node,
   image: PropTypes.string,
+  video: PropTypes.string,
   link: PropTypes.string,
   linkTitle: PropTypes.string,
   expandedByDefault: PropTypes.bool,
@@ -31,6 +32,7 @@ function LargeBox({
   skills,
   children,
   image,
+  video,
   link,
   linkTitle = 'Show More',
   expandedByDefault = false,
@@ -88,11 +90,20 @@ function LargeBox({
           </div>
 
           {image && (
-            <div className="flex justify-center sm:justify-start">
+            <div className="flex justify-center">
               <img
                 src={image}
                 className="h-48 sm:h-56 object-contain rounded-lg sm:rounded-xl mb-4 "
               />
+            </div>
+          )}
+
+          {video && (
+            <div className="flex justify-center">
+              <video className="w-full max-w-xl rounded-xl shadow-lg" width="600" controls autoPlay muted playsInline>
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           )}
 

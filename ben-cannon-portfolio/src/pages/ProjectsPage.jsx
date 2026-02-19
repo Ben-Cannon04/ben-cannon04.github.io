@@ -3,6 +3,7 @@ import Loading from '../components/Loading';
 import LargeBox from '../components/LargeBox';
 import SheffJam9Image from '../assets/images/SheffJam9.png';
 import ChessImage from '../assets/images/chess.png';
+import bioInspiredVideo from '../assets/videos/bio-inspired computing with regrowth.mp4';
 import { useState } from 'react';
 import Filter from '../components/Filter';
 
@@ -71,6 +72,23 @@ function ProjectsPage() {
               timePeriod="2023 - 2024"
               hide={filter != 'all' && filter != 'education'}
               key={11}
+            />
+            
+            <LargeBox
+              id="Bio-inspiredComputing"
+              title="Bio-inspired Computing Forest Fire Team Project"
+              subtitle="University Year 3"
+              description="I worked as part of a team to research and implement a bioinspired forest fire simulation using Python and cellular automata (CA).
+               The simulation incorporated stochastic elements to model real-world variability and accounted for wind direction, wind strength, 
+               and different terrain states. We explored both short-term and long-term intervention strategies, including gradient-based control measures,
+                to study their effects on fire spread and identified ways to reduce forest fires. 
+                The project involved thorough literature review, collaborative development, and team presentations of our findings."
+              isDarkMode={isDarkMode}
+              video={bioInspiredVideo}
+              skills={['Python', 'Communication', 'Presenting', 'Literature Analysis']}
+              timePeriod="2025"
+              hide={filter != 'all' && filter != 'education'}
+              key={12}
             />
 
             <LargeBox
