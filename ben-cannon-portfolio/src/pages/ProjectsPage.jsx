@@ -74,7 +74,7 @@ function ProjectsPage() {
               hide={filter != 'All' && filter != 'Education'}
               key={11}
             />
-            
+
             <LargeBox
               id="Bio-inspiredComputing"
               title="Bio-inspired Computing Forest Fire Team Project"
@@ -86,7 +86,12 @@ function ProjectsPage() {
                 The project involved thorough literature review, collaborative development, and team presentations of our findings."
               isDarkMode={isDarkMode}
               video={bioInspiredVideo}
-              skills={['Python', 'Communication', 'Presenting', 'Literature Analysis']}
+              skills={[
+                'Python',
+                'Communication',
+                'Presenting',
+                'Literature Analysis',
+              ]}
               timePeriod="2025"
               hide={filter != 'All' && filter != 'Education'}
               key={12}
