@@ -7,7 +7,7 @@ import { useState } from 'react';
 function TechnologiesPage() {
   const [isDarkMode] = useOutletContext();
 
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState('All');
 
   return (
     <Loading loading={false} error={null} isDarkMode={isDarkMode}>
@@ -24,7 +24,7 @@ function TechnologiesPage() {
           <Filter
             filter={filter}
             setFilter={setFilter}
-            filters={['all', 'C#', 'JavaScript', 'C++', 'Java']}
+            filters={['All', 'C#', 'JavaScript', 'C++', 'Java', 'Python', 'Kotlin']}
             isDarkMode={isDarkMode}
           />
 
@@ -44,7 +44,7 @@ function TechnologiesPage() {
                 },
               ]}
               proficiency="Advanced"
-              hide={filter != 'all' && filter != 'C#'}
+              hide={filter != 'All' && filter != 'C#'}
               key={0}
             >
               <p>
@@ -68,7 +68,7 @@ function TechnologiesPage() {
                 },
               ]}
               proficiency="Intermediate"
-              hide={filter != 'all' && filter != 'C#'}
+              hide={filter != 'All' && filter != 'C#'}
               key={1}
             >
               <p>
@@ -92,7 +92,7 @@ function TechnologiesPage() {
                 },
               ]}
               proficiency="Intermediate"
-              hide={filter != 'all' && filter != 'JavaScript'}
+              hide={filter != 'All' && filter != 'JavaScript'}
               key={2}
             >
               <p>
@@ -117,7 +117,7 @@ function TechnologiesPage() {
                 },
               ]}
               proficiency="Intermediate"
-              hide={filter != 'all' && filter != 'Java'}
+              hide={filter != 'All' && filter != 'Java'}
               key={3}
             >
               <p>
@@ -138,7 +138,7 @@ function TechnologiesPage() {
                 },
               ]}
               proficiency="Intermediate"
-              hide={filter != 'all' && filter != 'JavaScript'}
+              hide={filter != 'All' && filter != 'JavaScript'}
               key={22}
             >
               <p>
@@ -161,7 +161,7 @@ function TechnologiesPage() {
                 },
               ]}
               proficiency="Beginner"
-              hide={filter != 'all' && filter != 'C++'}
+              hide={filter != 'All' && filter != 'C++'}
               key={4}
             >
               <p>
@@ -181,12 +181,53 @@ function TechnologiesPage() {
                 },
               ]}
               proficiency="Beginner"
-              hide={filter != 'all' && filter != 'C#'}
+              hide={filter != 'All' && filter != 'C#'}
               key={6}
             >
               <p>
                 I have a small expierence with Asp.Net and would be intersed in
                 furthering my knowledge.
+              </p>
+            </TechBox>
+
+            <TechBox
+              title="Python"
+              isDarkMode={isDarkMode}
+              projects={[
+                {
+                  text: 'Bio-Inspired Computing Team Project',
+                  to: '/projects#Bio-inspiredComputing',
+                },
+              ]}
+              proficiency="Intermediate"
+              hide={filter != 'All' && filter != 'Python'}
+              key={0}
+            >
+              <p>
+                I have used Python primarily in academic projects and during my internship at Yunnex Traffic. 
+                At university, I developed a bio-inspired forest fire simulation using stochastic Cellular Automata, 
+                incorporating environmental factors and intervention strategies in a data-driven approach.
+                 My experience includes algorithm implementation, modelling, data analysis, and writing clean, structured Python code for research and practical tasks.
+              </p>
+            </TechBox>
+
+            <TechBox
+              title="Kotlin"
+              isDarkMode={isDarkMode}
+              projects={[
+                {
+                  text: 'Mobile Development Computing Team Project',
+                  to: '/projects#Mobile',
+                },
+              ]}
+              proficiency="Beginner"
+              hide={filter != 'All' && filter != 'Kotlin'}
+              key={0}
+            >
+              <p>
+                I am a beginner in Kotlin, having used it primarily during a university mobile development team project. 
+                In this project, I contributed to building an Android application using MVVM architecture, gaining foundational experience 
+                in Kotlin syntax, Android UI development, and basic testing practices.
               </p>
             </TechBox>
           </div>

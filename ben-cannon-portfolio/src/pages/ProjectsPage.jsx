@@ -94,7 +94,7 @@ function ProjectsPage() {
 
             <LargeBox
               id="Mobile"
-              title="Mobile University Team Project"
+              title="Mobile Development Team Project"
               subtitle="University Year 3"
               description="As part of a team-based mobile development project, we designed and built an 
               Android application using Kotlin to help landlords manage rental properties efficiently. 
