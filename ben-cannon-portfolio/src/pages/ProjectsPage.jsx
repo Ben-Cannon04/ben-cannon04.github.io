@@ -3,12 +3,14 @@ import Loading from '../components/Loading';
 import LargeBox from '../components/LargeBox';
 import SheffJam9Image from '../assets/images/SheffJam9.png';
 import ChessImage from '../assets/images/chess.png';
+import MobileTeamImage from '../assets/images/MobileTeam.png';
+import bioInspiredVideo from '../assets/videos/bio-inspired computing with regrowth.mp4';
 import { useState } from 'react';
 import Filter from '../components/Filter';
 
 function ProjectsPage() {
   const [isDarkMode] = useOutletContext();
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState('All');
 
   return (
     <Loading loading={false} error={null} isDarkMode={isDarkMode}>
@@ -25,7 +27,7 @@ function ProjectsPage() {
           <Filter
             filter={filter}
             setFilter={setFilter}
-            filters={['all', 'personal', 'education', 'work']}
+            filters={['All', 'Personal', 'Education', 'Work']}
             isDarkMode={isDarkMode}
           />
 
@@ -41,7 +43,7 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['ReactJS', 'Tailwind Css', 'GitHub Pages']}
               timePeriod="Ongoing"
-              hide={filter != 'all' && filter != 'personal'}
+              hide={filter != 'All' && filter != 'Personal'}
               key={0}
             />
 
@@ -54,7 +56,7 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['Ruby', 'Communication', 'Presenting']}
               timePeriod="2022 - 2023"
-              hide={filter != 'all' && filter != 'education'}
+              hide={filter != 'All' && filter != 'Education'}
               key={10}
             />
 
@@ -69,8 +71,44 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['Ruby on Rails', 'React', 'Presenting']}
               timePeriod="2023 - 2024"
-              hide={filter != 'all' && filter != 'education'}
+              hide={filter != 'All' && filter != 'Education'}
               key={11}
+            />
+            
+            <LargeBox
+              id="Bio-inspiredComputing"
+              title="Bio-inspired Computing Forest Fire Team Project"
+              subtitle="University Year 3"
+              description="I worked as part of a team to research and implement a bioinspired forest fire simulation using Python and cellular automata (CA).
+               The simulation incorporated stochastic elements to model real-world variability and accounted for wind direction, wind strength, 
+               and different terrain states. We explored both short-term and long-term intervention strategies, including gradient-based control measures,
+                to study their effects on fire spread and identified ways to reduce forest fires. 
+                The project involved thorough literature review, collaborative development, and team presentations of our findings."
+              isDarkMode={isDarkMode}
+              video={bioInspiredVideo}
+              skills={['Python', 'Communication', 'Presenting', 'Literature Analysis']}
+              timePeriod="2025"
+              hide={filter != 'All' && filter != 'Education'}
+              key={12}
+            />
+
+            <LargeBox
+              id="Mobile"
+              title="Mobile Development Team Project"
+              subtitle="University Year 3"
+              description="As part of a team-based mobile development project, we designed and built an 
+              Android application using Kotlin to help landlords manage rental properties efficiently. 
+              The app allowed landlords to track tenants, rental payments, property details, and maintenance requests in a structured and user-friendly interface.
+              We implemented the MVVM (Model-View-ViewModel) architectural pattern to ensure separation of concerns, maintainability, and scalability. 
+              The project emphasised clean architecture, collaborative development, and thorough testing to ensure reliability and robustness.
+              Working in a team environment, we followed structured development practices, divided responsibilities effectively, and maintained 
+              consistent code quality through reviews and testing."
+              isDarkMode={isDarkMode}
+              image={MobileTeamImage}
+              skills={['Kotlin', 'MVVM', 'Code Reviews', 'Communication']}
+              timePeriod="2025"
+              hide={filter != 'All' && filter != 'Education'}
+              key={12}
             />
 
             <LargeBox
@@ -84,7 +122,7 @@ function ProjectsPage() {
               skills={['Unity', 'C#']}
               timePeriod="July 2023"
               image={SheffJam9Image}
-              hide={filter != 'all' && filter != 'personal'}
+              hide={filter != 'All' && filter != 'Personal'}
               key={1}
             />
 
@@ -97,7 +135,7 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['C# ASP.NET', 'Bootstrap']}
               timePeriod="July 2022"
-              hide={filter != 'all' && filter != 'personal'}
+              hide={filter != 'All' && filter != 'Personal'}
               key={2}
             />
 
@@ -111,7 +149,7 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['Unity', 'C#']}
               timePeriod="January - May 2021"
-              hide={filter != 'all' && filter != 'education'}
+              hide={filter != 'All' && filter != 'Education'}
               key={3}
             />
 
@@ -125,7 +163,7 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['C# wpf', 'Design Patterns', 'Autofac', 'Automoq']}
               timePeriod="August - December 2024"
-              hide={filter != 'all' && filter != 'work'}
+              hide={filter != 'All' && filter != 'Work'}
               key={4}
             />
 
@@ -138,7 +176,7 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['C# wpf', 'C++', 'JavaScript', 'Test Complete']}
               timePeriod="January - July 2025"
-              hide={filter != 'all' && filter != 'work'}
+              hide={filter != 'All' && filter != 'Work'}
               key={5}
             />
           </div>
