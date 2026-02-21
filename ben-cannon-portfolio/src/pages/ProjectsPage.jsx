@@ -3,6 +3,7 @@ import Loading from '../components/Loading';
 import LargeBox from '../components/LargeBox';
 import SheffJam9Image from '../assets/images/SheffJam9.png';
 import ChessImage from '../assets/images/chess.png';
+import MobileTeamImage from '../assets/images/MobileTeam.png';
 import bioInspiredVideo from '../assets/videos/bio-inspired computing with regrowth.mp4';
 import { useState } from 'react';
 import Filter from '../components/Filter';
@@ -86,6 +87,25 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               video={bioInspiredVideo}
               skills={['Python', 'Communication', 'Presenting', 'Literature Analysis']}
+              timePeriod="2025"
+              hide={filter != 'all' && filter != 'education'}
+              key={12}
+            />
+
+            <LargeBox
+              id="Mobile"
+              title="Mobile University Team Project"
+              subtitle="University Year 3"
+              description="As part of a team-based mobile development project, we designed and built an 
+              Android application using Kotlin to help landlords manage rental properties efficiently. 
+              The app allowed landlords to track tenants, rental payments, property details, and maintenance requests in a structured and user-friendly interface.
+              We implemented the MVVM (Model-View-ViewModel) architectural pattern to ensure separation of concerns, maintainability, and scalability. 
+              The project emphasised clean architecture, collaborative development, and thorough testing to ensure reliability and robustness.
+              Working in a team environment, we followed structured development practices, divided responsibilities effectively, and maintained 
+              consistent code quality through reviews and testing."
+              isDarkMode={isDarkMode}
+              image={MobileTeamImage}
+              skills={['Kotlin', 'MVVM', 'Code Reviews', 'Communication']}
               timePeriod="2025"
               hide={filter != 'all' && filter != 'education'}
               key={12}
