@@ -10,7 +10,7 @@ import Filter from '../components/Filter';
 
 function ProjectsPage() {
   const [isDarkMode] = useOutletContext();
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState('All');
 
   return (
     <Loading loading={false} error={null} isDarkMode={isDarkMode}>
@@ -27,7 +27,7 @@ function ProjectsPage() {
           <Filter
             filter={filter}
             setFilter={setFilter}
-            filters={['all', 'personal', 'education', 'work']}
+            filters={['All', 'Personal', 'Education', 'Work']}
             isDarkMode={isDarkMode}
           />
 
@@ -43,7 +43,7 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['ReactJS', 'Tailwind Css', 'GitHub Pages']}
               timePeriod="Ongoing"
-              hide={filter != 'all' && filter != 'personal'}
+              hide={filter != 'All' && filter != 'Personal'}
               key={0}
             />
 
@@ -56,7 +56,7 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['Ruby', 'Communication', 'Presenting']}
               timePeriod="2022 - 2023"
-              hide={filter != 'all' && filter != 'education'}
+              hide={filter != 'All' && filter != 'Education'}
               key={10}
             />
 
@@ -71,7 +71,7 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['Ruby on Rails', 'React', 'Presenting']}
               timePeriod="2023 - 2024"
-              hide={filter != 'all' && filter != 'education'}
+              hide={filter != 'All' && filter != 'Education'}
               key={11}
             />
             
@@ -88,7 +88,7 @@ function ProjectsPage() {
               video={bioInspiredVideo}
               skills={['Python', 'Communication', 'Presenting', 'Literature Analysis']}
               timePeriod="2025"
-              hide={filter != 'all' && filter != 'education'}
+              hide={filter != 'All' && filter != 'Education'}
               key={12}
             />
 
@@ -107,7 +107,7 @@ function ProjectsPage() {
               image={MobileTeamImage}
               skills={['Kotlin', 'MVVM', 'Code Reviews', 'Communication']}
               timePeriod="2025"
-              hide={filter != 'all' && filter != 'education'}
+              hide={filter != 'All' && filter != 'Education'}
               key={12}
             />
 
@@ -122,7 +122,7 @@ function ProjectsPage() {
               skills={['Unity', 'C#']}
               timePeriod="July 2023"
               image={SheffJam9Image}
-              hide={filter != 'all' && filter != 'personal'}
+              hide={filter != 'All' && filter != 'Personal'}
               key={1}
             />
 
@@ -135,7 +135,7 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['C# ASP.NET', 'Bootstrap']}
               timePeriod="July 2022"
-              hide={filter != 'all' && filter != 'personal'}
+              hide={filter != 'All' && filter != 'Personal'}
               key={2}
             />
 
@@ -149,7 +149,7 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['Unity', 'C#']}
               timePeriod="January - May 2021"
-              hide={filter != 'all' && filter != 'education'}
+              hide={filter != 'All' && filter != 'Education'}
               key={3}
             />
 
@@ -163,7 +163,7 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['C# wpf', 'Design Patterns', 'Autofac', 'Automoq']}
               timePeriod="August - December 2024"
-              hide={filter != 'all' && filter != 'work'}
+              hide={filter != 'All' && filter != 'Work'}
               key={4}
             />
 
@@ -176,7 +176,7 @@ function ProjectsPage() {
               isDarkMode={isDarkMode}
               skills={['C# wpf', 'C++', 'JavaScript', 'Test Complete']}
               timePeriod="January - July 2025"
-              hide={filter != 'all' && filter != 'work'}
+              hide={filter != 'All' && filter != 'Work'}
               key={5}
             />
           </div>
