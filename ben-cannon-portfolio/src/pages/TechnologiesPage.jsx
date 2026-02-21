@@ -24,7 +24,15 @@ function TechnologiesPage() {
           <Filter
             filter={filter}
             setFilter={setFilter}
-            filters={['All', 'C#', 'JavaScript', 'C++', 'Java', 'Python', 'Kotlin']}
+            filters={[
+              'All',
+              'C#',
+              'JavaScript',
+              'C++',
+              'Java',
+              'Python',
+              'Kotlin',
+            ]}
             isDarkMode={isDarkMode}
           />
 
@@ -48,15 +56,16 @@ function TechnologiesPage() {
               key={0}
             >
               <p>
-                I have 13 months of industry experience using C# and WPF at {" "}
+                I have 13 months of industry experience using C# and WPF at{' '}
                 <a
                   href="https://www.certara.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline">
-                    Certara
-                  </a>
-                , contributing to the development of the {" "}
+                  className="text-blue-600 hover:underline"
+                >
+                  Certara
+                </a>
+                , contributing to the development of the{' '}
                 <a
                   href="https://www.certara.com/software/simcyp-pbpk/"
                   target="_blank"
@@ -65,10 +74,12 @@ function TechnologiesPage() {
                 >
                   Simcyp Simulator
                 </a>
-                . 
-                I worked on desktop application features, maintaining and improving production-level code within a complex scientific software system.
-                In addition, I have used C# in personal projects and hackathons, including building web applications with ASP.NET, strengthening my understanding 
-                of full-stack development and rapid prototyping.
+                . I worked on desktop application features, maintaining and
+                improving production-level code within a complex scientific
+                software system. In addition, I have used C# in personal
+                projects and hackathons, including building web applications
+                with ASP.NET, strengthening my understanding of full-stack
+                development and rapid prototyping.
               </p>
             </TechBox>
 
@@ -91,7 +102,7 @@ function TechnologiesPage() {
               key={2}
             >
               <p>
-                I have professional experience using React at {" "}
+                I have professional experience using React at{' '}
                 <a
                   href="https://www.yunextraffic.com/"
                   target="_blank"
@@ -100,11 +111,11 @@ function TechnologiesPage() {
                 >
                   Yunex Traffic
                 </a>
-                ,
-                alongside academic experience at Software Hut and personal projects.
-                I am currently using React with Electron for my dissertation project,
-                building a desktop application. My experience spans component-based UI development,
-                state management, and integrating React with desktop frameworks.
+                , alongside academic experience at Software Hut and personal
+                projects. I am currently using React with Electron for my
+                dissertation project, building a desktop application. My
+                experience spans component-based UI development, state
+                management, and integrating React with desktop frameworks.
               </p>
             </TechBox>
 
@@ -127,10 +138,13 @@ function TechnologiesPage() {
               key={1}
             >
               <p>
-                I have experience using Unity across personal projects, school assignments, and extracurricular activities. 
-                I developed games for GameJams, built a Chess Game as a school project, and contributed to the Game Development Society as Treasurer,
-                where I collaborated on team projects and supported creative development. My experience includes C# scripting, scene management, UI design,
-                and rapid prototyping within Unity.
+                I have experience using Unity across personal projects, school
+                assignments, and extracurricular activities. I developed games
+                for GameJams, built a Chess Game as a school project, and
+                contributed to the Game Development Society as Treasurer, where
+                I collaborated on team projects and supported creative
+                development. My experience includes C# scripting, scene
+                management, UI design, and rapid prototyping within Unity.
               </p>
             </TechBox>
 
@@ -153,10 +167,14 @@ function TechnologiesPage() {
               key={3}
             >
               <p>
-                I have extensive experience with Java from university, where I developed console applications and Java Swing GUI applications. 
-                In industry, I have used Java for backend development, including integrating with FFmpeg for media processing tasks. 
-                I am familiar with object-oriented design, event-driven programming, and building maintainable code. Looking forward, 
-                I am interested in expanding my skills to Java Spring Boot for enterprise and web application development.
+                I have extensive experience with Java from university, where I
+                developed console applications and Java Swing GUI applications.
+                In industry, I have used Java for backend development, including
+                integrating with FFmpeg for media processing tasks. I am
+                familiar with object-oriented design, event-driven programming,
+                and building maintainable code. Looking forward, I am interested
+                in expanding my skills to Java Spring Boot for enterprise and
+                web application development.
               </p>
             </TechBox>
 
@@ -178,7 +196,7 @@ function TechnologiesPage() {
               key={4}
             >
               <p>
-                I have used C++ in industry for backend development of the {" "}
+                I have used C++ in industry for backend development of the{' '}
                 <a
                   href="https://www.certara.com/software/simcyp-pbpk/"
                   target="_blank"
@@ -186,16 +204,19 @@ function TechnologiesPage() {
                   className="text-blue-600 hover:underline"
                 >
                   Simcyp Simulator
-                </a>
-                {" "}at{" "}
+                </a>{' '}
+                at{' '}
                 <a
                   href="https://www.certara.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline">
-                    Certara
-                  </a>
-                  {" "},contributing to high-performance scientific computing and maintaining production-level code in a complex pharmacokinetic simulation system.
+                  className="text-blue-600 hover:underline"
+                >
+                  Certara
+                </a>{' '}
+                ,contributing to high-performance scientific computing and
+                maintaining production-level code in a complex pharmacokinetic
+                simulation system.
               </p>
             </TechBox>
 
@@ -214,8 +235,10 @@ function TechnologiesPage() {
               key={6}
             >
               <p>
-                I have some experience with ASP.NET from personal projects and hackathons, 
-                and I am eager to further develop my skills in building web applications and exploring the full capabilities of the framework.
+                I have some experience with ASP.NET from personal projects and
+                hackathons, and I am eager to further develop my skills in
+                building web applications and exploring the full capabilities of
+                the framework.
               </p>
             </TechBox>
 
@@ -233,10 +256,13 @@ function TechnologiesPage() {
               key={0}
             >
               <p>
-                I have used Python primarily in academic projects and during my internship at Yunnex Traffic. 
-                At university, I developed a bio-inspired forest fire simulation using stochastic Cellular Automata, 
-                incorporating environmental factors and intervention strategies in a data-driven approach.
-                 My experience includes algorithm implementation, modelling, data analysis, and writing clean, structured Python code for research and practical tasks.
+                I have used Python primarily in academic projects and during my
+                internship at Yunnex Traffic. At university, I developed a
+                bio-inspired forest fire simulation using stochastic Cellular
+                Automata, incorporating environmental factors and intervention
+                strategies in a data-driven approach. My experience includes
+                algorithm implementation, modelling, data analysis, and writing
+                clean, structured Python code for research and practical tasks.
               </p>
             </TechBox>
 
@@ -254,9 +280,11 @@ function TechnologiesPage() {
               key={0}
             >
               <p>
-                I am a beginner in Kotlin, having used it primarily during a university mobile development team project. 
-                In this project, I contributed to building an Android application using MVVM architecture, gaining foundational experience 
-                in Kotlin syntax, Android UI development, and basic testing practices.
+                I am a beginner in Kotlin, having used it primarily during a
+                university mobile development team project. In this project, I
+                contributed to building an Android application using MVVM
+                architecture, gaining foundational experience in Kotlin syntax,
+                Android UI development, and basic testing practices.
               </p>
             </TechBox>
           </div>

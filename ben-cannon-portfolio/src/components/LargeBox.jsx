@@ -100,7 +100,14 @@ function LargeBox({
 
           {video && (
             <div className="flex justify-center">
-              <video className="w-full max-w-xl rounded-xl shadow-lg" width="600" controls autoPlay muted playsInline>
+              <video
+                className="w-full max-w-xl rounded-xl shadow-lg"
+                width="600"
+                controls
+                autoPlay
+                muted
+                playsInline
+              >
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
