@@ -2,14 +2,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import WorkPage from './pages/WorkPage';
 import HomePage from './pages/HomePage';
 import EducationPage from './pages/EducationPage';
 import ProjectsPage from './pages/ProjectsPage';
 import TechnologiesPage from './pages/TechnologiesPage';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <App />,
